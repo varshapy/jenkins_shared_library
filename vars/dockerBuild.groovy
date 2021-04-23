@@ -48,7 +48,7 @@ pipeline {
 						steps {
 						        sh "cd"
 							sh "ssh -i /rsa ubuntu@172.31.82.131"
-							sh "docker run -it alpine"           
+							sh "docker run alpine"           
                 					}
 						
 					}
