@@ -46,8 +46,8 @@ pipeline {
 					
 					stage('DEPLOY IMAGE') {
 						steps {
-						 sshagent (credentials: ['qpfb_ssh']) {
-								sh "ssh -o StrictHostKeyChecking=no -l qprofiles1 34.122.133.104 deploy $registry $dockerTag $containerName"
+						 sshagent (credentials: ['ubuntu_ssh']) {
+								sh "ssh -o StrictHostKeyChecking=no -l ubuntu 172.31.82.131 ls"
 							  }
 						}
 					}
