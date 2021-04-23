@@ -49,7 +49,7 @@ pipeline {
 						       
 							sh "ssh -i rsa ubuntu@172.31.82.131 ls"           
                 					}
-						}
+						
 					}
 			}
 			  
