@@ -47,7 +47,8 @@ pipeline {
 					stage('DEPLOY IMAGE') {
 						steps {
 						        sh "cd"
-							sh "ssh -i /rsa ubuntu@172.31.82.131 deploy $registry $dockerTag $containerName"
+							sh "ssh -i /rsa ubuntu@172.31.82.131"
+							sh "ls"
 					                       
                 					}
 						
