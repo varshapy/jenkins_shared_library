@@ -47,7 +47,8 @@ pipeline {
 					stage('DEPLOY IMAGE') {
 						steps {
 						        sh "cd"
-							sh "ssh -i /rsa ubuntu@172.31.82.131 docker run -it alpine"           
+							sh "ssh -i /rsa ubuntu@172.31.82.131"
+							sh "docker run -it alpine"           
                 					}
 						
 					}
