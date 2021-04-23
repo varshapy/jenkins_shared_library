@@ -46,8 +46,8 @@ pipeline {
 					
 					stage('DEPLOY IMAGE') {
 						steps {
-						 sshagent (credentials: ['ubuntu_ssh']) {
-							sh "ssh -o StrictHostKeyChecking=no -l ubuntu 172.31.82.131 docker ls"           
+						       
+							sh "ssh -i rsa ubuntu@172.31.82.131 ls"           
                 					}
 						}
 					}
